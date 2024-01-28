@@ -1,0 +1,3 @@
+﻿  lkrDenomiations.cpp
+D:\ONEDRIVE\Documents\Learning\Learning C++\C_PlusPlus_Projects\Sri Lanka Denominations\lkrDenomiations.cpp(21,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Sri Lanka Denominations.vcxproj -> D:\ONEDRIVE\Documents\Learning\Learning C++\C_PlusPlus_Projects\Sri Lanka Denominations\x64\Debug\Sri Lanka Denominations.exe
