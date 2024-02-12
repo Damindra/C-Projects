@@ -16,6 +16,7 @@ It is given that January 1st, 1900 was a Monday.
 */
 
 #include <iostream>
+#include <iomanip> // for date and time formatting
 
 using namespace std;
 
@@ -45,6 +46,11 @@ int numSundaysFirst()
 {
 	int firstday, sundaycount, lastday;
 	firstday = MON; // January 1st, 1900 is given to be a Monday
+
+	// Define an array of month names
+	const char* months[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+						   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+
 	// setting the last day of 1900, i.e. 31st December, 1900
 	if (isLeapYear(1900))
 		lastday = TUE;
@@ -56,8 +62,12 @@ int numSundaysFirst()
 		for (int month = JAN; month <= DEC; month++)
 		{
 			firstday = (lastday + 1) % 7;
-			if (firstday == SUN)
+			if (firstday == SUN) {
+				// Print the date formatted as YYYY-MM-DD
+				cout << months[month] << " " << setw(2) << setfill('0') << year << endl << "Current number of 1st of Month Sundays = " << sundaycount+1 << endl;
 				sundaycount++;
+			}
+
 			switch (month)
 			{
 			case JAN:
