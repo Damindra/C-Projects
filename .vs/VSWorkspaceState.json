@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Factorial_digits\\x64",
+    "\\Factorial_digits\\x64\\Debug",
+    "\\Fibonacci",
+    "\\Fibonacci\\Debug",
+    "\\Fibonacci\\x64",
+    "\\Fibonacci\\x64\\Debug",
+    "\\Restaurant"
   ],
+  "SelectedNode": "\\Factorial_digits",
   "PreviewInSolutionExplorer": false
 }
