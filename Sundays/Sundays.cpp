@@ -38,7 +38,7 @@ int main() {
 	int num;
 
 	num = numSundaysFirst();
-	cout << "Number of Sundays that fell on the first of the month during the twentieth century: " << num << endl;
+	cout << endl << "Number of Sundays that fell on the first of the month during the twentieth century: " << num << endl;
 	return 0;
 }
 
@@ -57,14 +57,14 @@ int numSundaysFirst()
 	else
 		lastday = MON;
 	sundaycount = 0;
-	for (int year = 1901; year <= 2000; year++)
+	for (int year = 1901; year <= 2000; year++) // loop through the years
 	{
-		for (int month = JAN; month <= DEC; month++)
+		for (int month = JAN; month <= DEC; month++) // loop through the months
 		{
-			firstday = (lastday + 1) % 7;
+			firstday = (lastday + 1) % 7; // setting the first day of the month
 			if (firstday == SUN) {
-				// Print the date formatted as YYYY-MM-DD
-				cout << months[month] << " " << setw(2) << setfill('0') << year << endl << "Current number of 1st of Month Sundays = " << sundaycount+1 << endl;
+				// Print the date formatted as MMM YYYY
+				cout  << months[month] << " " << setw(2) << year << endl << "Current number of 1st of Month Sundays = " << sundaycount+1 << endl;
 				sundaycount++;
 			}
 
@@ -77,19 +77,19 @@ int numSundaysFirst()
 			case AUG:
 			case OCT:
 			case DEC:
-				lastday = (firstday + 2) % 7;
+				lastday = (firstday + 2) % 7; // setting the last day of the month
 				break;
 			case APR:
 			case JUN:
 			case SEP:
 			case NOV:
-				lastday = (firstday + 1) % 7;
+				lastday = (firstday + 1) % 7; // setting the last day of the month
 				break;
 			case FEB:
-				if (isLeapYear(year))
+				if (isLeapYear(year)) //check if the year is a leap year from function isLeapYear
 					lastday = firstday;
 				else
-					lastday = (firstday + 6) % 7;
+					lastday = (firstday + 6) % 7; // setting the last day of the month
 				break;
 			}
 		}
@@ -97,19 +97,20 @@ int numSundaysFirst()
 	return sundaycount;
 }
 
+// Function to check if the year is a leap year
 bool isLeapYear(int year)
 {
-	if (year % 4 == 0)
+	if (year % 4 == 0) // check if the year is divisible by 4 must be true
 	{
-		if (year % 100 == 0)
+		if (year % 100 == 0) // check if the year is divisible by 100 must be true
 		{
-			if (year % 400 == 0)
+			if (year % 400 == 0) // check if the year is divisible by 400 must be true
 				return true;
 			else
 				return false;
 		}
 		else
-			return true;
+			return true; // return true if the year is divisible by 4 and not by 100 it is a leap year
 	}
 	else
 		return false;
