@@ -9,7 +9,7 @@ first of the month during the twentieth century (January 1901 to December
 2000)?
 
 Program that finds the number of Sundays that occurred on the first
-of the month during the twentieth century (from January 1901 to December
+of the month during the twentieth century (from January 1901 to December)
 
 It is given that January 1st, 1900 was a Monday.
 
