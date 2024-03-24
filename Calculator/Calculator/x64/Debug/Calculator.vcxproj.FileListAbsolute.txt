@@ -1,0 +1,3 @@
+D:\ONEDRIVE\Documents\Learning\Learning C++\C_PlusPlus_Projects\Calculator\Calculator\x64\Debug\Calculator.vcxproj.AssemblyReference.cache
+D:\ONEDRIVE\Documents\Learning\Learning C++\C_PlusPlus_Projects\Calculator\Calculator\x64\Debug\Calculator.MyForm.resources
+D:\ONEDRIVE\Documents\Learning\Learning C++\C_PlusPlus_Projects\Calculator\Calculator\x64\Debug\Calculator.vcxproj.GenerateResource.cache
